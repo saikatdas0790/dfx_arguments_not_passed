@@ -1,0 +1,15 @@
+type KnownPrincipalType = variant {
+  CanisterIdUserIndex;
+  CanisterIdConfiguration;
+  CanisterIdProjectMemberIndex;
+  CanisterIdTopicCacheIndex;
+  CanisterIdRootCanister;
+  CanisterIdDataBackup;
+  CanisterIdPostCache;
+  CanisterIdSNSController;
+  UserIdGlobalSuperAdmin;
+};
+type UserIndexInitArgs = record {
+  known_principal_ids : vec record { KnownPrincipalType; principal };
+};
+service : (UserIndexInitArgs) -> {}
