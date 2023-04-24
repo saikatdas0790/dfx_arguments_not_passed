@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/dfx_arguments_not_passed_backend",
+]

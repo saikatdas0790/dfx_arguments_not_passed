@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "canisters": {
+    "dfx_arguments_not_passed_backend": {
+      "type": "rust",
+      "package": "dfx_arguments_not_passed_backend",
+      "candid": "src/dfx_arguments_not_passed_backend/dfx_arguments_not_passed_backend.did"
+    },
+    "dfx_arguments_not_passed_frontend": {
+      "type": "assets",
+      "source": [
+        "src/dfx_arguments_not_passed_frontend/assets"
+      ],
+      "dependencies": [
+        "dfx_arguments_not_passed_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "output_env_file": ".env"
+}
